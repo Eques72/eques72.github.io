@@ -1,9 +1,5 @@
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section.segment");
 const navLinks = document.querySelectorAll(".nav-link");
-
-console.log("navigation script loaded");
-console.log("sections:", sections);
-console.log("navs:", navLinks);
 
 const observer = new IntersectionObserver(entries => {
     console.log("obs fired");
