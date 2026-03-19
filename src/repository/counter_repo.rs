@@ -1,4 +1,4 @@
-use rusqlite::{Connection, Result};
+use rusqlite::{Connection}; //, Result};
 
 fn get_connection() -> Connection {
     println!("{:?}", std::env::current_dir());

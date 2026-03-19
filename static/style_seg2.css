@@ -1,0 +1,56 @@
+.projects {
+  position: relative;
+  width: 80%;  /*  WHY? -  TO DO*/
+  margin: 0 auto;
+}
+
+.trunk {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: #ee0404;
+  transform: translateX(-50%);
+}
+
+.item {
+  position: relative;
+  width: 50%;
+  margin: 60px 0;
+}
+
+.item.left {
+  left: 0;
+  text-align: right;
+}
+
+.item.right {
+  left: 80%;
+  text-align: left;
+}
+
+.card {
+  display: inline-block;
+  width: 500px;
+  padding: 15px;
+  background: rgb(100, 100, 100);
+  border: 3px solid black;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 4px;
+  background: red;
+}
+
+.item.left::before {
+  right: -100px;
+}
+
+.item.right::before {
+  left: -100px;
+}

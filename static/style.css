@@ -32,7 +32,8 @@ h1 {
 .menu {
     position: fixed;
     top: 0;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 80%;
     font-family: 'Bitcount Single', sans-serif;
     font-size: large;
@@ -87,9 +88,12 @@ h1 {
 .menu a.active {
     background: rgba(255,255,255,0.5);
     text-decoration: underline;
-    font-size: larger;
+    /* font-size: larger; */
 }
 
+.menu a.active span {
+    transform: scale(1.25);
+}
 .segment {
     height: 100vh;
     display: flex;
@@ -115,7 +119,7 @@ h1 {
 }
 
 .seg2 {
-    background-color: #5a956a;
+    background-color: #1d222c;
     /* background: linear-gradient(
         #5a956a 70%,
         #9f7958 100%
@@ -144,12 +148,12 @@ h1 {
 .trans_seg1_2  {
     background: linear-gradient(
         #dfcfbd,
-        #5a956a 
+        #1d222c 
     );
 }
 .trans_seg2_3  {
     background: linear-gradient(
-        #5a956a,
+        #1d222c,
         #9f7958
     );  
 }
@@ -158,4 +162,19 @@ h1 {
         #9f7958,
         #2a622d
     );
+}
+
+canvas {
+  border: 2px solid red;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.5s ease-out, transform 1.0s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

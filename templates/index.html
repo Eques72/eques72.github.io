@@ -2,10 +2,11 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Personal Site</title>
 <link rel="stylesheet" href="/static/style.css">
 <link rel="stylesheet" href="/static/style_seg1.css">
+<link rel="stylesheet" href="/static/style_seg2.css">
 <link href="https://fonts.googleapis.com/css2?family=Bitcount&family=Bitcount+Single&family=Megrim&display=swap" rel="stylesheet">
 </head>
 
@@ -31,24 +32,39 @@
             <a href="https://github.com" target="_blank">GitHub</a>
             <a href="mailto:you@email.com">Email</a>
         </div>
+        <p>Visitors: <span id="visitor-count">...</span></p>
     </div>
 </section>
 
-<section id="projects" class="trans_segment trans_seg1_2">
+<section class="trans_segment trans_seg1_2">
 </section>
 
 <section id="projects" class="segment seg2">
-    <div class="content">
+    <div class="content fade-in">
         <h1>Projects</h1>
         <p>Some of my work</p>
+        <div class="trunk content fade-in"></div>
+        <div class="item left content fade-in">
+            <div class="card">
+                <h3>Project One</h3>
+                <img src="/../static/images/placeholder.jpg" width="300" height="300" />
+                <p>Description...</p>
+            </div>
+        </div>
+        <div class="item right content fade-in">
+            <div class="card">
+                <h3>Project Two</h3>
+                <img src="/../static/images/placeholder.jpg" width="300" height="300" />
+                <p>Description...</p>
+            </div>
     </div>
 </section>
 
-<section id="projects" class="trans_segment trans_seg2_3">
+<section class="trans_segment trans_seg2_3">
 </section>
 
 <section id="about" class="segment seg3">
-    <div class="content">
+    <div class="content fade-in">
         <h1>About me</h1>
 
         <div class="buttons">
@@ -58,19 +74,20 @@
     </div>
 </section>
 
-<section id="projects" class="trans_segment trans_seg3_4">
+<section class="trans_segment trans_seg3_4">
 </section>
 
 <section id="contact" class="segment seg4">
-    <div class="content">
+    <div class="content fade-in">
         <h1>Contact</h1>
-        <iframe
+        <canvas id="bg-canvas"></canvas>
+        <!-- <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/d1uraoHM8Gg"
             frameborder="0"
             allowfullscreen>
-        </iframe>
+        </iframe> -->
     </div>
 </section>
 
@@ -108,4 +125,5 @@ allowfullscreen>
 </body> -->
 
 <script src="/static/js/navigation.js"></script>
+<script type="module" src="/static/js/blocks3d.js"></script>
 </html>
