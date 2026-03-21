@@ -1,0 +1,80 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    font-family: 'Bitcount Single', sans-serif;
+    font-size: clamp(12px, 1.2vw, 26px);
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 25px;
+
+    z-index: 1000;
+
+    backdrop-filter: blur(4px);
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    white-space: nowrap;
+    flex: 0 1 auto;
+    text-align: center;
+
+    padding: clamp(4px, 2vw, 32px) clamp(4px, 3vw, 52px);
+    border-radius: 4px;
+
+    background: color-mix(in srgb, var(--button-color) 20%, transparent);
+    transition: background 1.0s ease;
+}
+
+.menu a span {
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.menu a:hover {
+    background: color-mix(in srgb, var(--button-hover-color) 35%, transparent);
+}
+
+.menu a:hover span {
+    transform: scale(1.25);
+}
+
+.menu a.active {
+    background: color-mix(in srgb, var(--button-active-color) 35%, transparent);
+    text-decoration: underline;
+}
+
+.menu a.active span {
+    transform: scale(1.25);
+}
+
+@media (max-width: 800px) {
+    .menu {
+        /* top: 50%; */
+        left: auto;
+        right: 0px;
+
+        transform: translateY(0%);
+        flex-direction: column;
+        align-items: flex-end;
+        backdrop-filter: none;
+        width: auto;
+        padding: 10px;
+}
+
+    .menu a {
+        width: 100%;
+        text-align: right;
+    padding: clamp(6px, 2vw, 16px) clamp(2px, 2vw, 20px);
+    }
+}

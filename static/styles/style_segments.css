@@ -1,0 +1,84 @@
+.segment {
+    /* height: 100vh; */
+    height: auto;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* z-index: -2; */
+    /* scroll-margin-top: 80px; */
+}
+
+.trans_segment {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seg_welcome {
+    background-color: var(--welcome-bck-color);
+    color: black;
+}
+
+.seg_about {
+    background-color: var(--about-bck-color);
+    color: black;
+}
+
+.seg_skills { 
+    background-color: var(--skills-bck-color);
+    color: black;
+}
+
+.seg_exp {
+    background-color: var(--exp-bck-color);
+    color: black;
+}
+
+.seg_proj {
+    background-color: var(--proj-bck-color);
+    color: black;
+}
+
+.seg_contact {
+    background-color: var(--contact-bck-color);
+    color: black;
+}
+
+
+.trans_seg1_2  {
+    background: linear-gradient(
+        var(--welcome-bck-color),
+        var(--about-bck-color)
+    );
+}
+
+.trans_seg2_3  {
+    background: linear-gradient(
+        var(--about-bck-color),
+        var(--skills-bck-color)
+    );  
+}
+
+.trans_seg3_4  {
+    background: linear-gradient(
+        var(--skills-bck-color),
+        var(--exp-bck-color)
+    );
+}
+
+.trans_seg4_5  {
+    background: linear-gradient(
+        var(--exp-bck-color),
+        var(--proj-bck-color)
+    );
+}
+
+.trans_seg5_6  {
+    background: linear-gradient(
+        var(--proj-bck-color),
+        var(--contact-bck-color) 
+    );
+}

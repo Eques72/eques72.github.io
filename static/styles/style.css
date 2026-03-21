@@ -1,0 +1,62 @@
+:root
+{
+    --welcome-bck-color: #ede9e2;
+    --about-bck-color: #EFE9E3;
+    --skills-bck-color: #e4dcd5;
+    --exp-bck-color: #D9CFC7;
+    --proj-bck-color: #d1c2b1;
+    --contact-bck-color: #C9B59C;
+    --text-color: black;
+    --button-color: #D1D8BE;
+    --button-hover-color: #A7C1A8;
+    --button-active-color: #819A91;
+}
+
+html, body {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Megrim', sans-serif;
+    color: #333;
+}
+
+p {
+    font-family: 'Bitcount Single', sans-serif;
+    text-align: justify;
+}
+
+.buttons button {
+    padding: 10px 18px;
+    margin: 8px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: #1a5fc1;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px; 
+     /* TO DO remove arbitrary numbers */
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.5s ease-out, transform 1.0s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

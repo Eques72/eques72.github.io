@@ -3,13 +3,23 @@ import * as CANNON from "https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cann
 
 const container = document.getElementById("contact");
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, 400 / 400, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
 camera.position.z = 10;
 
 
 const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("bg-canvas"), alpha: true });
-renderer.setSize(400, 400);
-// renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(window.innerWidth*0.85, window.innerHeight*0.85);
+
+window.addEventListener('resize', onWindowResize);
+function onWindowResize() {
+  const width = window.innerWidth*0.85;
+  const height = window.innerHeight*0.85;
+
+  renderer.setSize(width, height);
+
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+}
 
 const world = new CANNON.World();
 world.gravity.set(0, 0, 0);
@@ -18,13 +28,13 @@ function createBox() {
   const size = 1;
 
   const geometry = new THREE.BoxGeometry(size, size, size);
-  const material = new THREE.MeshStandardMaterial({ color: 0xEEBBBB });
+  const material = new THREE.MeshStandardMaterial({ color: 0x819A91 });
   const mesh = new THREE.Mesh(geometry, material);
   scene.add(mesh);
 
   const shape = new CANNON.Box(new CANNON.Vec3(size/2, size/2, size/2));
-  const body = new CANNON.Body({ mass: 1, shape });
-  body.position.set(Math.random()*5-1, Math.random()*5-1, Math.random()*5-1);
+  const body = new CANNON.Body({ mass: 0.2, shape });
+  body.position.set(Math.random()*10, Math.random()*10, Math.random()*5);
   world.addBody(body);
 
   return { mesh, body };
@@ -32,9 +42,13 @@ function createBox() {
 
 const objects = Array.from({ length: 10 }, createBox);
 
-const light = new THREE.PointLight(0xEEAAff, 10);
+const light = new THREE.PointLight(0xFFFFFF, 50);
 light.position.set(5, 5, 5);
 scene.add(light);
+const light2 = new THREE.PointLight(0xFFFFFF, 50);
+light2.position.set(-5, -5, 5);
+scene.add(light2);
+
 
 function animate() {
   requestAnimationFrame(animate);

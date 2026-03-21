@@ -2,29 +2,35 @@
 <html>
 
 <head>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personal Site</title>
-<link rel="stylesheet" href="/static/style.css">
-<link rel="stylesheet" href="/static/style_seg1.css">
-<link rel="stylesheet" href="/static/style_seg2.css">
-<link href="https://fonts.googleapis.com/css2?family=Bitcount&family=Bitcount+Single&family=Megrim&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <link rel="stylesheet" href="/static/styles/style_menu.css">
+    <link rel="stylesheet" href="/static/styles/style_segments.css">
+    <link rel="stylesheet" href="/static/styles/style_welcome.css">
+    <link rel="stylesheet" href="/static/styles/style_skills.css">
+    <link rel="stylesheet" href="/static/styles/style_exp.css">
+    <link rel="stylesheet" href="/static/styles/style_projects.css">
+    <link rel="stylesheet" href="/static/styles/style_contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount&family=Bitcount+Single&family=Megrim&display=swap" rel="stylesheet">
+    <title>Eques72 Personal Site</title>
 </head>
 
 <body>
-
 <nav class="menu">
     <a href="#welcome" class="nav-link active"><span>Welcome</span></a>
+    <a href="#about" class="nav-link"><span>About me</span></a>
+    <a href="#skills" class="nav-link"><span>Skills</span></a>
+    <a href="#expirience" class="nav-link"><span>Experience</span></a>
     <a href="#projects" class="nav-link"><span>Projects</span></a>
-    <a href="#about" class="nav-link"><span>Links</span></a>
-    <a href="#contact" class="nav-link"><span>Media</span></a>
+    <a href="#contact" class="nav-link"><span>Contact</span></a>
 </nav>
 
-<section id="welcome" class="segment seg1 hero">
+<section id="welcome" class="segment seg_welcome hero">
     <div class="hero-content">
         <h1 class="hero-name">Adrian Zaręba</h1>
         <h2 class="hero-title">Software Engeener and Developer</h2>
         <p class="hero-desc">
-            Building fast, reliable systems and clean web experiences.
+            A swiss knife of a computer world.
         </p>
 
         <div class="hero-links">
@@ -32,14 +38,131 @@
             <a href="https://github.com" target="_blank">GitHub</a>
             <a href="mailto:you@email.com">Email</a>
         </div>
-        <p>Visitors: <span id="visitor-count">...</span></p>
+        <p>Visitors: <span id="visitor-count">...</span></p> <!-- TO DO move somewhere -->
     </div>
 </section>
 
 <section class="trans_segment trans_seg1_2">
 </section>
 
-<section id="projects" class="segment seg2">
+<section id="about" class="segment seg_about">
+    <div class="content fade-in">
+        <h1>About me</h1>
+        <span class="divider"></span> <!-- TO DO dividers -->
+        <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos 
+            qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+    </div>
+</section>
+
+<section class="trans_segment trans_seg2_3">
+</section>
+
+<section id="skills" class="segment seg_skills">
+    <div class="content fade-in">
+        <h1 class="skills-header">Skills</h1>
+
+        <div class="skills-grid">
+            <div class="skills-col">
+                <h3>Programming Languages</h3>
+                    <ul class="skills-col-tags">
+                        <li class="skills-tags">C++</li>
+                        <li class="skills-tags">Pyton</li>
+                        <li class="skills-tags">Kotlin</li>
+                        <li class="skills-tags">C#</li>
+                        <li class="skills-tags">Rust</li>
+                    </ul>
+            </div>
+
+            <div class="skills-col">
+                <h3>Tools</h3>
+                <ul class="skills-col-list">
+                    <li>Git</li>
+                    <li>Unity</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+
+            <div class="skills-col">
+                <h3>Frameworks</h3>
+                <ul class="skills-col-list">
+                    <li>RAG & MCP</li>
+                    <li>...</li>
+                </ul>
+            </div>
+
+            <div class="skills-col">
+                <h3>Knowledge</h3>
+                <ul class="skills-col-list">
+                    <li>Design Patterns</li>
+                    <li>Linux</li>
+                    <li>TDD & Integration Testing</li>
+                    <li>Jira</li>
+                </ul>
+            </div>
+        </div>
+
+            <!-- <div class="buttons">
+            <a href="https://github.com"><button>GitHub</button></a>
+            <a href="https://www.rust-lang.org"><button>Rust</button></a>
+        </div> -->
+    </div>
+</section>
+
+<section class="trans_segment trans_seg3_4">
+</section>
+
+<section id="expirience" class="segment seg_exp">
+    <canvas id="bg-canvas"></canvas>
+    <div class="content fade-in">
+        <div class="exp-head"> 
+            <h1>Expirience</h1>
+            <p>Over two years of professional expirience as a software developer, together with practical knowledge from student's activities and Computer Science Studies create a solid knowledgebase, ready for future challenges.</p>
+        </div>
+        <div class="exp-timeline"> 
+            <div class = "exp-block">
+                <div class = "exp-content">
+                    <h2 class="exp-name">Junior C++ Engeener</h2>
+                    <h3 class="exp-place">Nokia Networks S.A.</h3>
+                    <p class="exp-descr">A blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                </div>
+                <span class="exp-date">Apr 2023 - June 2025</span>
+            </div>
+            <div class = "exp-block">
+                <div class = "exp-content">
+                    <h2 class="exp-name">Council Member</h2>
+                    <h3 class="exp-place">Student Science Club - GRID </h3>
+                    <p class="exp-descr">A blah blah blah blah blah blah blah blah blah</p>
+                </div>
+                <span class="exp-date">Oct 2022 - Feb 2024</span>
+            </div>
+            <div class = "exp-block">
+                <div class = "exp-content">
+                    <h2 class="exp-name">University Student - Master's in Computer Science</h2>
+                    <h3 class="exp-place">Silesian University of Technology</h3>
+                    <p class="exp-descr">A blah blah blah blah blah blah</p>
+                </div>
+                <span class="exp-date">Mar 2024 - Sep 2025</span>
+            </div>
+            <div class = "exp-block">
+                <div class = "exp-content">
+                    <h2 class="exp-name">University Student - Bachelor's in Computer Science</h2>
+                    <h3 class="exp-place">Silesian University of Technology</h3>
+                    <p class="exp-descr">A blah blah blah blah blah blah</p>
+                </div>
+                <span class="exp-date">Oct 2020 - Feb 2024</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="trans_segment trans_seg4_5">
+</section>
+
+<section id="projects" class="segment seg_proj">
     <div class="content fade-in">
         <h1>Projects</h1>
         <p>Some of my work</p>
@@ -48,6 +171,7 @@
             <div class="card">
                 <h3>Project One</h3>
                 <img src="/../static/images/placeholder.jpg" width="300" height="300" />
+                <!-- TO DO instead of image iframe to git repo -->
                 <p>Description...</p>
             </div>
         </div>
@@ -57,73 +181,23 @@
                 <img src="/../static/images/placeholder.jpg" width="300" height="300" />
                 <p>Description...</p>
             </div>
-    </div>
-</section>
-
-<section class="trans_segment trans_seg2_3">
-</section>
-
-<section id="about" class="segment seg3">
-    <div class="content fade-in">
-        <h1>About me</h1>
-
-        <div class="buttons">
-            <a href="https://github.com"><button>GitHub</button></a>
-            <a href="https://www.rust-lang.org"><button>Rust</button></a>
         </div>
     </div>
 </section>
 
-<section class="trans_segment trans_seg3_4">
+<section class="trans_segment trans_seg5_6">
 </section>
 
-<section id="contact" class="segment seg4">
+<section id="contact" class="segment seg_contact">
     <div class="content fade-in">
-        <h1>Contact</h1>
-        <canvas id="bg-canvas"></canvas>
-        <!-- <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/d1uraoHM8Gg"
-            frameborder="0"
-            allowfullscreen>
-        </iframe> -->
+        <h1>WIP Contact</h1>
     </div>
 </section>
 
 </body>
 
-<!-- 
-<body>
-
-<h1>My Rust Website</h1>
-
-<p>This site runs using Axum and SQLite.</p>
-
-<p>Visitors: <b>{{counter}}</b></p>
-
-<div class="buttons">
-
-<a href="https://github.com">
-<button>GitHub</button>
-</a>
-
-<a href="https://www.rust-lang.org">
-<button>Rust</button>
-</a>
-
-</div>
-
-<h2>Embedded content</h2>
-
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/d1uraoHM8Gg"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
-</body> -->
-
 <script src="/static/js/navigation.js"></script>
+<script src="/static/js/fade.js"></script>
+<script src="/static/js/api_actions.js"></script>
 <script type="module" src="/static/js/blocks3d.js"></script>
 </html>
