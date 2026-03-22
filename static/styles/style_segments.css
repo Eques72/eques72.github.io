@@ -8,7 +8,6 @@
     position: relative;
     /* z-index: -2; */
     /* scroll-margin-top: 80px; */
-    scroll-snap-align: start;
 }
 
 .trans_segment {
@@ -18,7 +17,7 @@
     justify-content: center;
 }
 
-.seg_welcome {
+/* .seg_welcome {
     background-color: var(--welcome-bck-color);
     color: black;
 }
@@ -46,7 +45,7 @@
 .seg_contact {
     background-color: var(--contact-bck-color);
     color: black;
-}
+} */
 
 
 .trans_seg1_2  {

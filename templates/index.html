@@ -16,57 +16,60 @@
 </head>
 
 <body>
-<nav class="menu">
-    <a href="#welcome" class="nav-link active"><span>Welcome</span></a>
-    <a href="#about" class="nav-link"><span>About me</span></a>
-    <a href="#skills" class="nav-link"><span>Skills</span></a>
-    <a href="#expirience" class="nav-link"><span>Experience</span></a>
-    <a href="#projects" class="nav-link"><span>Projects</span></a>
-    <a href="#contact" class="nav-link"><span>Contact</span></a>
-</nav>
-
+    <nav class="menu">
+        <img src="/../static/images/eyeA64.png" class="eyeball" width="64" height="64"></img>
+        <a href="#welcome" class="nav-link active"><span>Home</span></a>
+        <a href="#about" class="nav-link"><span>About me</span></a>
+        <a href="#skills" class="nav-link"><span>Skills</span></a>
+        <a href="#expirience" class="nav-link"><span>Experience</span></a>
+        <a href="#projects" class="nav-link"><span>Portfolio</span></a>
+        <a href="#contact" class="nav-link"><span>Contact</span></a>
+    </nav>
 <!-- TO DO add subtle button at screen bottom to roll to next sections -->
 
 <section id="welcome" class="segment seg_welcome hero">
-    <div class="hero-content">
-        <h1 class="hero-name">Hi, I'm Adrian Zaręba</h1>
-        <h2 class="hero-title">Software Engeener and Developer</h2>
-        <h2 class="hero-title">Master of Engineering in Computer and Information Science</h2>
+    <div class="hero-content card">
+        <h1 class="hero-name">Adrian Zaręba</h1>
+        <h2 class="hero-title">Software Engeener</h2>
+        <h2 class="hero-title">M.Eng. in Computer & Information Science</h2>
+        <h2 class="hero-title" style="font-weight: bold;">Good Morning</h2>
         <p class="hero-desc">
-            A swiss knife of a computer world.
+            There is certainly a way to do this.
         </p>
+    </div>
+</section>
 
-        <div class="hero-links">
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://github.com" target="_blank">GitHub</a>
-            <a href="mailto:you@email.com">Email</a>
+<section id="about" class="segment">
+    <div class="fade-in">
+        <div class="grid grid-2-3">
+            <div class="card">
+                <h1>About me</h1>
+                <span class="divider"></span>
+                <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+            </div>
+            <div class="card">
+                <h1>Find me here</h1>
+                <span class="divider"></span>
+                <div class="about-socials">
+                    <a class="item" href="https://github.com" target="_blank">
+                        <img class="icon" src="/../static/images/icons/github_16065963.png" alt="Github"></img>
+                    </a>       
+                    <a class="item" href="https://linkedin.com" target="_blank">
+                        <img class="icon" src="/../static/images/icons/linkedin_253790.png" alt="LinkedIn"></img>
+                    </a>             
+                </div>
+                </div>
+            </div>
         </div>
-        <p>Visitors: <span id="visitor-count">...</span></p> <!-- TO DO move somewhere -->
     </div>
-</section>
-
-<section class="trans_segment trans_seg1_2">
-</section>
-
-<section id="about" class="segment seg_about">
-    <div class="content fade-in">
-        <h1>About me</h1>
-        <span class="divider"></span> <!-- TO DO dividers -->
-        <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos 
-            qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-    </div>
-</section>
-
-<section class="trans_segment trans_seg2_3">
 </section>
 
 <section id="skills" class="segment seg_skills">
-    <div class="content fade-in">
+    <div class="card fade-in">
         <h1 class="skills-header">Skills</h1> <!-- DEVELOPMENT ARSENAL -->
-
+        <span class="divider"></span>
+        <p>I mainly work on stuff for users, games and backend</h1>
         <div class="skills-grid">
             <div class="skills-col">
                 <h3>Programming Languages</h3>
@@ -75,7 +78,6 @@
                         <li class="skills-tags">Pyton</li>
                         <li class="skills-tags">Kotlin</li>
                         <li class="skills-tags">C#</li>
-                        <li class="skills-tags">Rust</li>
                     </ul>
             </div>
 
@@ -114,11 +116,7 @@
     </div>
 </section>
 
-<section class="trans_segment trans_seg3_4">
-</section>
-
 <section id="expirience" class="segment seg_exp">
-    <canvas id="bg-canvas"></canvas>
     <div class="content fade-in">
         <div class="exp-head"> 
             <h1>Expirience</h1>
@@ -162,9 +160,6 @@
     </div>
 </section>
 
-<section class="trans_segment trans_seg4_5">
-</section>
-
 <section id="projects" class="segment seg_proj">
     <div class="content fade-in">
         <h1>Projects</h1>   <!-- TO DO - rename to portfolio? -->
@@ -188,9 +183,6 @@
     </div>
 </section>
 
-<section class="trans_segment trans_seg5_6">
-</section>
-
 <section id="contact" class="segment seg_contact">
     <div class="content fade-in">
         <h1>WIP Contact</h1>
@@ -202,5 +194,4 @@
 <script src="/static/js/navigation.js"></script>
 <script src="/static/js/fade.js"></script>
 <script src="/static/js/api_actions.js"></script>
-<script type="module" src="/static/js/blocks3d.js"></script>
 </html>

@@ -16,7 +16,7 @@
     font-size: 24px;
     font-weight: 500;
     margin: 10px 0;
-    color: black;
+    color: var(--text-color);
 }
 
 .hero-desc {
@@ -25,7 +25,7 @@
     font-weight: 300;
     max-width: 500px;
     margin: 0 auto 20px;
-    color: black;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -41,7 +41,7 @@
     border-radius: 6px;
 
     background: rgba(255,255,255,0.1);
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
 
     transition: background 1.0s ease;

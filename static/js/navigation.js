@@ -26,3 +26,20 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
     observer.observe(section);
 });
+
+navLinks.forEach(link => 
+{
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+
+        if (target) {
+            const offset = target.offsetTop + target.offsetHeight * -0.5;
+            window.scrollTo({
+            top: offset,
+            behavior: 'smooth'
+        });
+        }
+    });
+});
