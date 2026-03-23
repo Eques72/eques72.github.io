@@ -52,6 +52,10 @@
     justify-content: center;
 }
 
+.seg_exp {
+    margin-bottom: 0;
+}
+
 .trans_seg1_2  {
     background: linear-gradient(
         var(--welcome-bck-color),

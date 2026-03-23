@@ -122,3 +122,56 @@
         text-align: left;
     }
 }
+
+.exp-tabs {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  overflow: hidden; }
+  .exp-tabs [class^="exp-tab"] label,
+  .exp-tabs [class*=" exp-tab"] label {
+    color: #efedef;
+    cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 2rem 0;
+    text-align: center; }
+  .exp-tabs [class^="exp-tab"] [type="radio"],
+  .exp-tabs [class*=" exp-tab"] [type="radio"] {
+    border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+    cursor: pointer;
+    appearance: none;
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease-in-out; }
+    .exp-tabs [class^="exp-tab"] [type="radio"]:hover, .tabs [class^="exp-tab"] [type="radio"]:focus,
+    .exp-tabs [class*=" exp-tab"] [type="radio"]:hover,
+    .exp-tabs [class*=" exp-tab"] [type="radio"]:focus {
+      border-bottom: 1px solid #fd264f; }
+    .exp-tabs [class^="exp-tab"] [type="radio"]:checked,
+    .exp-tabs [class*=" exp-tab"] [type="radio"]:checked {
+      border-bottom: 2px solid #fd264f; }
+    .exp-tabs [class^="exp-tab"] [type="radio"]:checked + div,
+    .exp-tabs [class*=" exp-tab"] [type="radio"]:checked + div {
+      opacity: 1; }
+    .exp-tabs [class^="exp-tab"] [type="radio"] + div,
+    .exp-tabs [class*=" exp-tab"] [type="radio"] + div {
+      display: block;
+      opacity: 0;
+      padding: 2rem 0;
+      width: 90%;
+      transition: all 0.3s ease-in-out; }
+  .exp-tabs .exp-tab-2 {
+    width: 50%; }
+    .exp-tabs .exp-tab-2 [type="radio"] + div {
+      width: 200%;
+      margin-left: 200%; }
+    .exp-tabs .exp-tab-2 [type="radio"]:checked + div {
+      margin-left: 0; }
+    .exp-tabs .exp-tab-2:last-child [type="radio"] + div {
+      margin-left: 100%; }
+    .exp-tabs .exp-tab-2:last-child [type="radio"]:checked + div {
+      margin-left: -100%; }
