@@ -27,15 +27,24 @@
     </nav>
 <!-- TO DO add subtle button at screen bottom to roll to next sections -->
 
-<section id="welcome" class="segment seg_welcome hero">
-    <div class="hero-content card">
-        <h1 class="hero-name">Adrian Zaręba</h1>
-        <h2 class="hero-title">Software Engeener</h2>
-        <h2 class="hero-title">M.Eng. in Computer & Information Science</h2>
-        <h2 class="hero-title" style="font-weight: bold;">Good Morning</h2>
-        <p class="hero-desc">
-            There is certainly a way to do this.
-        </p>
+<section id="welcome" class="segment hero">
+    <div class="grid grid-1-2-1">
+        <div class="card"> 
+            <h2>Current Status</h2>
+               <!-- Open for Work -> Call to action -->
+        </div>
+        <div class="hero-content card">
+            <h1 class="hero-name">Adrian Zaręba</h1>
+            <h2 class="hero-title">Software Engeener</h2>
+            <h2 class="hero-title">M.Eng. in Computer & Information Science</h2>
+            <h2 class="hero-title" style="font-weight: bold;"><br>Good Morning</h2>
+            <p class="hero-desc">
+                There is certainly a way to do this.
+            </p>
+        </div>
+        <div class="card">
+            <h2>Project at hand</h2>  
+        </div>
     </div>
 </section>
 
@@ -108,11 +117,7 @@
                 </ul>
             </div>
         </div>
-
-            <!-- <div class="buttons">
-            <a href="https://github.com"><button>GitHub</button></a>
-            <a href="https://www.rust-lang.org"><button>Rust</button></a>
-        </div> -->
+        <span class="divider-full"></span>
     </div>
 </section>
 
@@ -161,24 +166,73 @@
 </section>
 
 <section id="projects" class="segment seg_proj">
-    <div class="content fade-in">
-        <h1>Projects</h1>   <!-- TO DO - rename to portfolio? -->
-        <p>Some of my work</p>
-        <div class="trunk content fade-in"></div>
-        <div class="item left content fade-in">
-            <div class="card">
-                <h3>Project One</h3>
-                <img src="/../static/images/placeholder.jpg" width="300" height="300" />
-                <!-- TO DO instead of image iframe to git repo -->
-                <p>Description...</p>
+    <div class="fade-in">
+        <h1>Portfolio</h1>
+        <span class="divider"></span>
+    <div class="carousel-wrapper">
+
+    <div class="radio-input">
+        <input type="radio" name="position">
+            <div class="circle"></div> 
+        <input type="radio" name="position">
+            <div class="circle"></div> 
+        <input type="radio" name="position" checked>
+            <div class="circle"></div>
+        <input type="radio" name="position">
+            <div class="circle"></div>
+        <input type="radio" name="position">
+            <div class="circle"></div>
+    </div>  
+        <div class="carousel">
+            <div class="project-card">
+                    <a href="https://google.com" target="_blank" class="card-image">
+                        <img src="/../static/images/placeholder.jpg" alt="Project image">
+                        <div class="card-title">Project Title 1</div>
+                    </a>
+                    <div class="card-content">
+                        <p>This is a short description of the project.</p>
+                    </div>
+            </div>
+            <div class="project-card">
+                    <a href="https://google.com" target="_blank" class="card-image">
+                        <img src="/../static/images/placeholder.jpg" alt="Project image">
+                        <div class="card-title">Project Title 1</div>
+                    </a>
+                    <div class="card-content">
+                        <p>This is a short description of the project.</p>
+                    </div>
+            </div>
+            <div class="project-card">
+                    <a href="https://google.com" target="_blank" class="card-image">
+                        <img src="/../static/images/placeholder.jpg" alt="Project image">
+                        <div class="card-title">Project Title 1</div>
+                    </a>
+                    <div class="card-content">
+                        <p>This is a short description of the project.</p>
+                    </div>
+            </div>
+            <div class="project-card">
+                    <a href="https://google.com" target="_blank" class="card-image">
+                        <img src="/../static/images/placeholder.jpg" alt="Project image">
+                        <div class="card-title">Project Title 1</div>
+                    </a>
+                    <div class="card-content">
+                        <p>This is a short description of the project.</p>
+                    </div>
+            </div>
+            <div class="project-card">
+                    <a href="https://google.com" target="_blank" class="card-image">
+                        <img src="/../static/images/placeholder.jpg" alt="Project image">
+                        <div class="card-title">Project Title 1</div>
+                    </a>
+                    <div class="card-content">
+                        <p>This is a short description of the project.</p>
+                    </div>
             </div>
         </div>
-        <div class="item right content fade-in">
-            <div class="card">
-                <h3>Project Two</h3>
-                <img src="/../static/images/placeholder.jpg" width="300" height="300" />
-                <p>Description...</p>
-            </div>
+        <div class="carousel-controls">
+                <button class="carousel-button" onclick="prev()">◀</button>
+                <button class="carousel-button" onclick="next()">▶</button>
         </div>
     </div>
 </section>

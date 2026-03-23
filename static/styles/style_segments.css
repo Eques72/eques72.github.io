@@ -37,16 +37,20 @@
     color: black;
 }
 
-.seg_proj {
-    background-color: var(--proj-bck-color);
-    color: black;
-}
 
 .seg_contact {
     background-color: var(--contact-bck-color);
     color: black;
 } */
 
+.seg_proj {
+    /* background-color: var(--proj-bck-color);
+    color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .trans_seg1_2  {
     background: linear-gradient(

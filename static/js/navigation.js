@@ -43,3 +43,22 @@ navLinks.forEach(link =>
         }
     });
 });
+
+// carousel controls
+const radios = document.querySelectorAll('input[name="position"]');
+
+function getIndex() {
+  return [...radios].findIndex(r => r.checked);
+}
+
+function next() {
+  let i = getIndex();
+  i = (i + 1) % radios.length;
+  radios[i].checked = true;
+}
+
+function prev() {
+  let i = getIndex();
+  i = (i - 1 + radios.length) % radios.length;
+  radios[i].checked = true;
+}
