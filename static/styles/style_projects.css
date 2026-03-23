@@ -1,4 +1,10 @@
 /* https://freefrontend.com/css-carousels/ */
+/* TO DO
+  - Arrows need better positioning
+  - softer card edges or shadows
+  - more responsive carousel
+  - Some intruductory text under the heading?
+*/
 
 .carousel-wrapper {
   height: 100%;
@@ -35,6 +41,30 @@
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
+}
+
+.carousel-button
+{
+   	&:hover .arrow {
+		&.left,
+		&.right {
+			&::after {
+				border-color: var(--arrow-color-hover);
+			}
+		}
+
+		&.left {
+			&::after {
+				box-shadow: calc( var(--arrow-size) / -8 ) calc( var(--arrow-size) / -8 ) 0 var(--arrow-color);
+			}
+		}
+
+		&.right {
+			&::after {
+				box-shadow: calc( var(--arrow-size) / 8 ) calc( var(--arrow-size) / -8 ) 0 var(--arrow-color);
+			}
+		}
+	} 
 }
 
 .project-card {
@@ -85,6 +115,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
 }
 
 .radio-input input {
@@ -142,35 +174,10 @@
   --position: 5;
 }
 
-/* input:nth-of-type(1) {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-input:nth-of-type(2) {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-
-input:nth-of-type(3) {
-  grid-column: 4 /5;
-  grid-row: 2 / 3;
-}
-
-input:nth-of-type(4) {
-  grid-column: 5 / 6;
-  grid-row: 2 / 3;
-}
-
-input:nth-of-type(5) {
-  grid-column: 6 / 7;
-  grid-row: 2 / 3;
-} */
-
 .card-image {
   pointer-events: auto;
   position: relative;
-  height: 40%;
+  height: 45%;
   display: block;
   overflow: hidden;
 }
@@ -186,21 +193,72 @@ input:nth-of-type(5) {
 
 .card-title {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   left: 10px;
   right: 10px;
   color: white;
   font-weight: bold;
-  font-size: 1.1rem;
   background: rgba(0,0,0,0.5);
+  width: min-content;
+  text-wrap: nowrap;
   padding: 6px 10px;
   border-radius: 6px;
 }
 
 .card-content {
-  height: 60%;
-  /* padding: 12px; */
-  font-size: 0.9rem;
-  /* line-height: 1.4;
-  overflow: hidden; */
+  height: 55%;
+  padding: calc(var(--spacing)*4);;
+  font-size: 1rem;
+  /* line-height: 1.4; */
+  overflow: hidden;
+}
+
+.arrow {
+	--arrow-size: 2rem;
+	--arrow-color: #9d0ea7;
+	--arrow-color-hover: #9d0ea786;
+	position: relative;
+	display: inline-flex;
+	vertical-align: middle;
+	width: var(--arrow-size);
+	height: var(--arrow-size);
+	overflow: hidden;
+	
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		box-sizing: border-box;
+		display: inline-block;
+		width: calc( var(--arrow-size) * .7071);
+		height: calc( var(--arrow-size) * .7071);
+		border-top: calc( var(--arrow-size) / 5 ) solid var(--arrow-color);
+		transition: all 150ms ease-in-out;
+	}
+	
+	&.left {
+		&::after {
+			left: calc( var(--arrow-size) / 5 );
+			border-left: calc( var(--arrow-size) / 5 ) solid var(--arrow-color);
+			transform-origin: top left;
+			rotate: -45deg;
+		}
+
+		&:hover::after {
+			box-shadow: calc( var(--arrow-size) / -8 ) calc( var(--arrow-size) / -8 ) 0 var(--arrow-color);
+		}
+	}
+
+	&.right {
+		&::after {
+			right: calc( var(--arrow-size) / 5 );
+			border-right: calc( var(--arrow-size) / 5 ) solid var(--arrow-color);
+			transform-origin: top right;
+			rotate: 45deg;
+		}
+
+		&:hover::after {
+			box-shadow: calc( var(--arrow-size) / 8 ) calc( var(--arrow-size) / -8 ) 0 var(--arrow-color);
+		}
+	}
 }

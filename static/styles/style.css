@@ -221,6 +221,14 @@ section{
     background-image: linear-gradient(90deg, #81109d, #0a0daa);
 }
 
+.divider-line 
+{
+    display: block;
+    margin: 0 0;
+    width: 100%;
+    height: 2px;
+    background-color: #81109d
+}
 
 .icon{
     /* height: 55px; */
