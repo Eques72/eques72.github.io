@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/static/styles/style_projects.css">
     <link rel="stylesheet" href="/static/styles/style_contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Bitcount&family=Bitcount+Single&family=Megrim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Eques72 Portfolio</title>
 </head>
 
@@ -29,46 +30,44 @@
 
 <section id="welcome" class="segment hero">
     <div class="grid grid-1-2-1">
-        <div class="card"> 
+        <div class="card left"> 
             <h2>Current Status</h2>
                <!-- Open for Work -> Call to action -->
         </div>
-        <div class="hero-content card">
+        <div class="hero-content card center">
             <h1 class="hero-name">Adrian Zaręba</h1>
             <h2 class="hero-title">Software Engeener</h2>
             <h2 class="hero-title">M.Eng. in Computer & Information Science</h2>
             <h2 class="hero-title" style="font-weight: bold;"><br>Good Morning</h2>
             <p class="hero-desc">
-                There is certainly a way to do this.
+                There is <span class="magic-text">certainly</span> a way to do this.
             </p>
         </div>
-        <div class="card">
+        <div class="card right">
             <h2>Project at hand</h2>  
         </div>
     </div>
 </section>
 
 <section id="about" class="segment">
-    <div class="fade-in">
-        <div class="grid grid-2-3">
-            <div class="card">
-                <h1>About me</h1>
-                <span class="divider"></span>
-                <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+    <div class="fade-in grid grid-2-3">
+        <div class="card">
+            <h1>About me</h1>
+            <span class="divider"></span>
+            <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+        </div>
+        <div class="card">
+            <h1>Find me here</h1>
+            <span class="divider"></span>
+            <div class="about-socials">
+                <a class="item" href="https://github.com" target="_blank">
+                    <img class="icon" src="/../static/images/icons/github_16065963.png" alt="Github"></img>
+                </a>       
+                <a class="item" href="https://linkedin.com" target="_blank">
+                    <img class="icon" src="/../static/images/icons/linkedin_253790.png" alt="LinkedIn"></img>
+                </a>             
             </div>
-            <div class="card">
-                <h1>Find me here</h1>
-                <span class="divider"></span>
-                <div class="about-socials">
-                    <a class="item" href="https://github.com" target="_blank">
-                        <img class="icon" src="/../static/images/icons/github_16065963.png" alt="Github"></img>
-                    </a>       
-                    <a class="item" href="https://linkedin.com" target="_blank">
-                        <img class="icon" src="/../static/images/icons/linkedin_253790.png" alt="LinkedIn"></img>
-                    </a>             
-                </div>
-                </div>
             </div>
         </div>
     </div>
@@ -76,7 +75,7 @@
 
 <section id="skills" class="segment seg_skills">
     <div class="card fade-in">
-        <h1 class="skills-header">Skills</h1> <!-- DEVELOPMENT ARSENAL -->
+        <h1>Skills</h1> <!-- DEVELOPMENT ARSENAL -->
         <span class="divider"></span>
         <p>I mainly work on stuff for users, games and backend</h1>
         <div class="skills-grid">
@@ -122,7 +121,7 @@
 </section>
 
 <section id="expirience" class="segment seg_exp">
-    <div class="content fade-in">
+    <div class="fade-in">
         <div class="exp-head"> 
             <h1>Expirience</h1>
             <p>Over two years of professional expirience as a software developer, together with practical knowledge from student's activities and Computer Science Studies create a solid knowledgebase, ready for future challenges.</p>
@@ -201,22 +200,21 @@
     <div class="fade-in">
         <h1>Portfolio</h1>
         <span class="divider"></span>
-    <div class="carousel-wrapper">
-
-    <div class="radio-input">
-        <input type="radio" name="position">
-            <div class="circle"></div> 
-        <input type="radio" name="position">
-            <div class="circle"></div> 
-        <input type="radio" name="position" checked>
-            <div class="circle"></div>
-        <input type="radio" name="position">
-            <div class="circle"></div>
-        <input type="radio" name="position">
-            <div class="circle"></div>
-    </div>  
-        <div class="carousel">
-            <div class="project-card">
+        <div class="carousel-wrapper">
+            <div class="radio-input">
+                <input type="radio" name="position">
+                    <div class="circle"></div> 
+                <input type="radio" name="position">
+                    <div class="circle"></div> 
+                <input type="radio" name="position" checked>
+                    <div class="circle"></div>
+                <input type="radio" name="position">
+                    <div class="circle"></div>
+                <input type="radio" name="position">
+                    <div class="circle"></div>
+            </div>  
+            <div class="carousel">
+                <div class="project-card">
                     <a href="https://google.com" target="_blank" class="card-image">
                         <img src="/../static/images/placeholder.jpg" alt="Project image">
                         <div class="card-title">Project Title 1</div>
@@ -225,60 +223,99 @@
                         <span class="divider-line"></span>
                         <p>This is a short description of the project.</p>
                     </div>
+                </div>
+                <div class="project-card">
+                    <a href="https://google.com" target="_blank" class="card-image">
+                        <img src="/../static/images/placeholder.jpg" alt="Project image">
+                        <div class="card-title">Project Title 1</div>
+                    </a>
+                    <div class="card-content">
+                        <span class="divider-line"></span>
+                        <p>This is a short description of the project.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="https://google.com" target="_blank" class="card-image">
+                        <img src="/../static/images/placeholder.jpg" alt="Project image">
+                        <div class="card-title">Project Title 1</div>
+                    </a>
+                    <div class="card-content">
+                        <span class="divider-line"></span>
+                        <p>This is a short description of the project.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="https://google.com" target="_blank" class="card-image">
+                        <img src="/../static/images/placeholder.jpg" alt="Project image">
+                        <div class="card-title">Project Title 1</div>
+                    </a>
+                    <div class="card-content">
+                        <span class="divider-line"></span>
+                        <p>This is a short description of the project.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="https://google.com" target="_blank" class="card-image">
+                        <img src="/../static/images/placeholder.jpg" alt="Project image">
+                        <div class="card-title">Project Title 1</div>
+                    </a>
+                    <div class="card-content">
+                        <span class="divider-line"></span>
+                        <p>This is a short description of the project.</p>
+                    </div>
+                </div>
             </div>
-            <div class="project-card">
-                    <a href="https://google.com" target="_blank" class="card-image">
-                        <img src="/../static/images/placeholder.jpg" alt="Project image">
-                        <div class="card-title">Project Title 1</div>
-                    </a>
-                    <div class="card-content">
-                        <span class="divider-line"></span>
-                        <p>This is a short description of the project.</p>
-                    </div>
-            </div>
-            <div class="project-card">
-                    <a href="https://google.com" target="_blank" class="card-image">
-                        <img src="/../static/images/placeholder.jpg" alt="Project image">
-                        <div class="card-title">Project Title 1</div>
-                    </a>
-                    <div class="card-content">
-                        <span class="divider-line"></span>
-                        <p>This is a short description of the project.</p>
-                    </div>
-            </div>
-            <div class="project-card">
-                    <a href="https://google.com" target="_blank" class="card-image">
-                        <img src="/../static/images/placeholder.jpg" alt="Project image">
-                        <div class="card-title">Project Title 1</div>
-                    </a>
-                    <div class="card-content">
-                        <span class="divider-line"></span>
-                        <p>This is a short description of the project.</p>
-                    </div>
-            </div>
-            <div class="project-card">
-                    <a href="https://google.com" target="_blank" class="card-image">
-                        <img src="/../static/images/placeholder.jpg" alt="Project image">
-                        <div class="card-title">Project Title 1</div>
-                    </a>
-                    <div class="card-content">
-                        <span class="divider-line"></span>
-                        <p>This is a short description of the project.</p>
-                    </div>
+            <div class="carousel-controls">
+                <div class="carousel-button" onclick="prev()"><span class="arrow left"></div>
+                <div class="carousel-button" onclick="next()"><span class="arrow right"></div>
             </div>
         </div>
-        <div class="carousel-controls">
-            <div class="carousel-button" onclick="prev()"><span class="arrow left"></div>
-            <div class="carousel-button" onclick="next()"><span class="arrow right"></div>
-        </div>
+        <span class="divider-full"></span>
     </div>
 </section>
 
-<section id="contact" class="segment seg_contact">
-    <div class="content fade-in">
-        <h1>WIP Contact</h1>
+<section id="contact" class="segment">
+    <div class="card fade-in">
+        <h1>Get In Touch</h1>
+        <span class="divider"></span>                
+        <div class="contact-wrapper">                    
+            <form id="contact-form" class="form-horizontal" role="form">
+            <div class="form-group">
+                <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                <input type="text" class="form-control" id="subject" placeholder="SUBJECT" name="subject" value="" required>
+                </div>
+            </div>
+            <textarea class="form-control" rows="8" placeholder="MESSAGE" name="message" required></textarea>                    
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND"><p>SEND MESSAGE</p></button>
+            </button>
+            
+            </form>
+            <span class="divider-v"></span>
+            <div class="direct-contact-container">
+                <ul class="contact-list">
+                <li class="list-item">
+                    <i class="fa-solid fa-map-marker fa-2x"></i>
+                    <span class="contact-text place">Lesser Poland, Poland</span>
+                </li>                        
+                <li class="list-item">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                    <span class="contact-text gmail"><a href="mailto:#" title="Send me an email">adrian.zareba842@proton.me</a></span>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <span class="divider-full"></span>
     </div>
 </section>
+
+<footer>
+  <p>Copyright &copy; 2026 Adrian Zaręba. All Rights Reserved.</p>
+</footer>
 
 </body>
 

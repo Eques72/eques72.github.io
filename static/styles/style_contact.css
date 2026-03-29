@@ -1,15 +1,112 @@
-canvas {
-    border: 2px solid red;
-    position: absolute;
-    /* top: 30%; */
-    left: 50%;
-    /* transform: translateY(20%); */
-    transform: translateX(-50%);
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    position: relative;
     width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    /* display: block;   */
-    /* background-position: center center; */
-    /* background-size: cover; */
+}
+
+#contact-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+#contact-form .form-group {
+    margin: 0;
+}
+ 
+#contact-form .form-control {
+    width: 100%;
+    background-color: #000;
+    border: 1px solid #444;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    padding: 14px 16px;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+ 
+#contact-form .form-control::placeholder {
+    color: #888;
+}
+ 
+#contact-form .form-control:focus {
+    border-color: #888;
+}
+ 
+#contact-form textarea.form-control {
+    resize: vertical;
+    min-height: 180px;
+}
+ 
+#contact-form .send-button {
+    width: 100%;
+    background-color: #2f7ed8;
+    border: none;
+    border-radius: 3px;
+    padding: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 2px;
+}
+ 
+#contact-form .send-button:hover {
+    background-color: #2568b8;
+}
+ 
+#contact-form .send-button p {
+    margin: 0;
+    color: #fff;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+}
+
+.direct-contact-container {
+    width: 40%;
+}
+
+.contact-list {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-right: 20px;
+}
+
+.list-item {
+    line-height: 4;
+    color: #aaa;
+}
+
+.contact-text {
+    letter-spacing: 1.9px;
+    color: #bbb;
+    }
+
+.place {
+    margin-left: 60px;
+}
+
+.gmail {
+    margin-left: 60px;
 }
