@@ -37,25 +37,11 @@
  
 #contact-form .send-button {
     width: 100%;
-    background-color: #2f7ed8;
-    border: none;
-    border-radius: 3px;
-    padding: 14px;
-    cursor: pointer;
-    transition: background-color 0.2s;
     margin-top: 2px;
 }
  
 #contact-form .send-button:hover {
     background-color: #2568b8;
-}
- 
-#contact-form .send-button p {
-    margin: 0;
-    color: #fff;
-    font-size: 0.75rem;
-    letter-spacing: 0.12em;
-    text-align: center;
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1600px) {
@@ -101,14 +87,15 @@
 }
 
 .list-item {
-    line-height: 4;
+    line-height: 1;
     color: #aaa;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .contact-text, .contact-text a:any-link {
     color: #bbb;
     font-size: 1rem;
+    margin-top: 18px;
 }
 
 .fa-map-marker{
@@ -117,4 +104,33 @@
 
 .place {
     letter-spacing: 1.9px;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: opacity 0.8s;
+}
+
+.tooltip.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip.error {
+    background: #9b2d20;
+}
+
+.tooltip.success {
+    background: #276dae;
 }

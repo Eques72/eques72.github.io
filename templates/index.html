@@ -287,7 +287,13 @@
                 </li>                        
                 <li class="list-item">
                     <i class="fa-solid fa-envelope fa-xl"></i>
-                    <span class="contact-text mail"><a href="mailto:#" title="Send me an email">adrian.zareba842@proton.me</a></span>
+                    <span class="contact-text mail"><a href="mailto:#" title="Send me an email">adrian.zareba842@gmail.com</a></span>
+                </li>
+                <li class="list-item">
+                    <h2>Full Resume</h2>
+                </li>
+                <li class="list-item">
+                    <button class="btn btn-primary">REQUEST RESUME</button>
                 </li>
                 </ul>
             </div>
@@ -307,8 +313,11 @@
                         <input type="text" class="form-control" id="subject" placeholder="SUBJECT" name="subject" value="" required>
                         </div>
                     </div>
-                    <textarea class="form-control" rows="6" placeholder="MESSAGE" name="message" required></textarea>                    
-                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND"><p>SEND MESSAGE</p></button>
+                    <textarea class="form-control" rows="6" id="message" placeholder="MESSAGE" name="message" required></textarea>                    
+                    <button class="btn btn-primary send-button" id="submit" form="contact-form" type="submit">
+                        <p>SEND MESSAGE</p>
+                        <span class="tooltip" id="form-tooltip"></span>
+                    </button>
                 </form>
             <span class="divider-full"></span>
         </div> 
@@ -323,5 +332,6 @@
 
 <script src="/static/js/navigation.js"></script>
 <script src="/static/js/fade.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="/static/js/submit.js"></script>
 </html>
