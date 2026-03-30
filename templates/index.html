@@ -275,41 +275,43 @@
 </section>
 
 <section id="contact" class="segment">
-    <div class="card fade-in">
-        <h1>Get In Touch</h1>
-        <span class="divider"></span>                
-        <div class="contact-wrapper">                    
-            <form id="contact-form" class="form-horizontal" role="form">
-            <div class="form-group">
-                <div class="col-sm-12">
-                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-12">
-                <input type="text" class="form-control" id="subject" placeholder="SUBJECT" name="subject" value="" required>
-                </div>
-            </div>
-            <textarea class="form-control" rows="8" placeholder="MESSAGE" name="message" required></textarea>                    
-            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND"><p>SEND MESSAGE</p></button>
-            </button>
-            
-            </form>
-            <span class="divider-v"></span>
+    <div class="fade-in grid grid-3-2">
+        <div class="card">
+            <h1>Contact Info</h1>
+            <span class="divider"></span>
             <div class="direct-contact-container">
                 <ul class="contact-list">
                 <li class="list-item">
-                    <i class="fa-solid fa-map-marker fa-2x"></i>
-                    <span class="contact-text place">Lesser Poland, Poland</span>
+                    <i class="fa-solid fa-map-marker fa-xl"></i>
+                    <span class="contact-text place">Lesser&nbsp;Poland&nbsp;Poland</span>
                 </li>                        
                 <li class="list-item">
-                    <i class="fa-solid fa-envelope fa-2x"></i>
-                    <span class="contact-text gmail"><a href="mailto:#" title="Send me an email">adrian.zareba842@proton.me</a></span>
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                    <span class="contact-text mail"><a href="mailto:#" title="Send me an email">adrian.zareba842@proton.me</a></span>
                 </li>
                 </ul>
             </div>
+            <span class="divider-full"></span>
         </div>
-        <span class="divider-full"></span>
+        <div class="card">
+            <h1>Get In Touch</h1>
+            <span class="divider"></span>    
+                <form id="contact-form" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                        <input type="text" class="form-control" id="subject" placeholder="SUBJECT" name="subject" value="" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" rows="6" placeholder="MESSAGE" name="message" required></textarea>                    
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND"><p>SEND MESSAGE</p></button>
+                </form>
+            <span class="divider-full"></span>
+        </div> 
     </div>
 </section>
 
@@ -321,5 +323,5 @@
 
 <script src="/static/js/navigation.js"></script>
 <script src="/static/js/fade.js"></script>
-<script src="/static/js/api_actions.js"></script>
+<script src="/static/js/submit.js"></script>
 </html>
