@@ -1,15 +1,15 @@
-#contact-form {
+.form-horizontal {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
  
-#contact-form .form-group {
+.form-horizontal .form-group {
     margin: 0;
 }
  
-#contact-form .form-control {
+.form-horizontal .form-control {
     width: 100%;
     background-color: #000;
     border: 1px solid #444;
@@ -23,24 +23,24 @@
     box-sizing: border-box;
 }
  
-#contact-form .form-control::placeholder {
+.form-horizontal .form-control::placeholder {
     color: #888;
 }
  
-#contact-form .form-control:focus {
+.form-horizontal .form-control:focus {
     border-color: #888;
 }
 
-#contact-form textarea.form-control {
+.form-horizontal textarea.form-control {
     resize: vertical;
 }
  
-#contact-form .send-button {
+.form-horizontal .send-button {
     width: 100%;
     margin-top: 2px;
 }
  
-#contact-form .send-button:hover {
+.form-horizontal .send-button:hover {
     background-color: #2568b8;
 }
 
@@ -133,4 +133,38 @@
 
 .tooltip.success {
     background: #276dae;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-box {
+    background: #111;
+    padding: 2rem;
+    border-radius: 6px;
+    width: 90%;
+    position: relative;
+    max-width:60vw;
+}
+
+#close-modal {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
