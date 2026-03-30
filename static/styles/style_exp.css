@@ -80,7 +80,7 @@
     margin: 20px 20px 60px 60px;
     position: relative;
     padding: 10px 10px; 
-    background:rgba(255, 255, 255, 0.3);
+    background:rgba(255, 43, 43, 0.388);
     color:#fff;
     border-radius: 14px;
     line-height: 35px;
@@ -132,5 +132,5 @@
     font-size:95%;
     font-weight: bold;
 }
-.exp-timeline-wrapper .time span:first-child{top:-16px}
-.exp-timeline-wrapper .time span:last-child{top:94%}
+.exp-timeline-wrapper .time span:first-child{top:-19px}
+.exp-timeline-wrapper .time span:last-child{top:89%}
