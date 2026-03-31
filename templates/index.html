@@ -21,24 +21,26 @@
         <img src="/../static/images/eyeA64.png" class="eyeball" width="64" height="64"></img>
         <a href="#welcome" class="nav-link active"><span>Home</span></a>
         <a href="#about" class="nav-link"><span>About me</span></a>
-        <a href="#skills" class="nav-link"><span>Skills</span></a>
         <a href="#expirience" class="nav-link"><span>Experience</span></a>
+        <a href="#skills" class="nav-link"><span>Skills</span></a>
         <a href="#projects" class="nav-link"><span>Portfolio</span></a>
         <a href="#contact" class="nav-link"><span>Contact</span></a>
     </nav>
 
 <section id="welcome" class="segment hero">
     <div class="grid grid-1-2-1">
-        <div class="card left"> 
+        <div class="card left status-card"> 
             <h2>Current Status</h2>
             <p class="sf-indicator">
                 <span class="status-dot status-green"></span>
                 <span>Open for work</span>
             </p>
-            <button class="btn btn-primary">
-                <p>Contact Me</p>
-            </button>
-            <button class="btn btn-primary">
+            <a href="#contact" class="nav-link">
+                <button class="btn btn-primary">
+                    <p>Contact Me</p>
+                </button>
+            </a>
+            <button id="open-modal" class="btn btn-primary">
                 <p>Request Resume</p>
             </button>
         </div>
@@ -80,53 +82,6 @@
             </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section id="skills" class="segment seg_skills">
-    <div class="card fade-in">
-        <h1>Skills</h1> <!-- DEVELOPMENT ARSENAL -->
-        <span class="divider"></span>
-        <p>I mainly work on stuff for users, games and backend</h1>
-        <div class="skills-grid">
-            <div class="skills-col">
-                <h3>Programming Languages</h3>
-                    <ul class="skills-col-tags">
-                        <li class="skills-tags">C++</li>
-                        <li class="skills-tags">Pyton</li>
-                        <li class="skills-tags">Kotlin</li>
-                        <li class="skills-tags">C#</li>
-                    </ul>
-            </div>
-
-            <div class="skills-col">
-                <h3>Tools</h3>
-                <ul class="skills-col-list">
-                    <li>Git</li>
-                    <li>Unity</li>
-                    <li>Linux</li>
-                </ul>
-            </div>
-
-            <div class="skills-col">
-                <h3>Frameworks</h3>
-                <ul class="skills-col-list">
-                    <li>RAG & MCP</li>
-                    <li>...</li>
-                </ul>
-            </div>
-
-            <div class="skills-col">
-                <h3>Knowledge</h3>
-                <ul class="skills-col-list">
-                    <li>Design Patterns</li>
-                    <li>Linux</li>
-                    <li>TDD & Integration Testing</li>
-                    <li>Jira</li>
-                </ul>
-            </div>
-        </div>
-        <span class="divider-full"></span>
     </div>
 </section>
 
@@ -198,11 +153,53 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
+<section id="skills" class="segment seg_skills">
+    <div class="card fade-in">
+        <h1>Skills</h1> <!-- DEVELOPMENT ARSENAL -->
+        <span class="divider"></span>
+        <p>I mainly work on stuff for users, games and backend</h1>
+        <div class="skills-grid">
+            <div class="skills-col">
+                <h3>Programming Languages</h3>
+                    <ul class="skills-col-tags">
+                        <li class="skills-tags">C++</li>
+                        <li class="skills-tags">Pyton</li>
+                        <li class="skills-tags">Kotlin</li>
+                        <li class="skills-tags">C#</li>
+                    </ul>
+            </div>
 
+            <div class="skills-col">
+                <h3>Tools</h3>
+                <ul class="skills-col-list">
+                    <li>Git</li>
+                    <li>Unity</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
 
+            <div class="skills-col">
+                <h3>Frameworks</h3>
+                <ul class="skills-col-list">
+                    <li>RAG & MCP</li>
+                    <li>...</li>
+                </ul>
+            </div>
 
-
+            <div class="skills-col">
+                <h3>Knowledge</h3>
+                <ul class="skills-col-list">
+                    <li>Design Patterns</li>
+                    <li>Linux</li>
+                    <li>TDD & Integration Testing</li>
+                    <li>Jira</li>
+                </ul>
+            </div>
+        </div>
+        <span class="divider-full"></span>
     </div>
 </section>
 
