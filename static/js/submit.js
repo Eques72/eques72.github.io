@@ -61,6 +61,9 @@ const modal = document.getElementById('modal');
 document.getElementById('open-modal').addEventListener('click', () => {
     modal.classList.add('active');
 });
+document.getElementById('open-modal-bottom').addEventListener('click', () => {
+    modal.classList.add('active');
+});
 
 document.getElementById('close-modal').addEventListener('click', () => {
     modal.classList.remove('active');
