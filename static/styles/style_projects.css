@@ -233,8 +233,12 @@
 		width: calc( var(--arrow-size) * .7071);
 		height: calc( var(--arrow-size) * .7071);
 		border-top: calc( var(--arrow-size) / 5 ) solid var(--arrow-color);
-		transition: all 150ms ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
+
+  &:hover{
+    transform: scale(1.2);
+  }
 	
 	&.left {
 		&::after {
