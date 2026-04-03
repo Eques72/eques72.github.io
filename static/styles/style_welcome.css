@@ -29,28 +29,6 @@
     text-align: center;
 }
 
-.hero-links {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    font-family: 'Bitcount Single', serif;    
-}
-
-.hero-links a {
-    padding: 8px 16px;
-    border-radius: 6px;
-
-    background: rgba(255,255,255,0.1);
-    color: var(--text-color);
-    text-decoration: none;
-
-    transition: background 1.0s ease;
-}
-
-.hero-links a:hover {
-    background: rgba(255,255,255,0.25);
-}
-
 .hero-content {
     /* margin-top: 20%; */
 }
