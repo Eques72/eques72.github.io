@@ -183,3 +183,11 @@
 .location span{
     padding-top: 8px;
 }
+
+.wip-text h3{
+    margin: 0;
+}
+
+.wip-text p{
+    margin: 0;
+}
