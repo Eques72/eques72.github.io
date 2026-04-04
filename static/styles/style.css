@@ -24,7 +24,7 @@
 
 html, body {
     padding: 0;
-    font-family: 'Bitcount Single', Arial;
+    font-family: 'Saira Semi Condensed', Arial;
     scroll-behavior: smooth;
 }
 
@@ -53,22 +53,24 @@ h1 {
     min-width: 120px;
 }
 
-p {
-    font-family: 'Bitcount Single', sans-serif;
+h2, h3
+{
+    font-family: 'Saira Stencil', sans-serif;
+    color: var(--text-color);
+}
+
+p, span {
+    font-family: 'Saira Semi Condensed', sans-serif;
     text-align: justify;
     color: var(--text-color);
 }
 
-.buttons button {
+button {
     padding: 10px 18px;
     margin: 8px;
     border: none;
     background: white;
     cursor: pointer;
-}
-
-.buttons button:hover {
-    /* background: #1a5fc1; */
 }
 
 section{
