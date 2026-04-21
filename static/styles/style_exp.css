@@ -6,7 +6,7 @@
   overflow: hidden; }
   .exp-tabs [class^="exp-tab"] label,
   .exp-tabs [class*=" exp-tab"] label {
-    color: #efedef;
+    color: var(--font-color);
     cursor: pointer;
     display: block;
     font-size: 1.1em;
@@ -25,10 +25,10 @@
     .exp-tabs [class^="exp-tab"] [type="radio"]:hover, .tabs [class^="exp-tab"] [type="radio"]:focus,
     .exp-tabs [class*=" exp-tab"] [type="radio"]:hover,
     .exp-tabs [class*=" exp-tab"] [type="radio"]:focus {
-      border-bottom: 1px solid #fd264f; }
+      border-bottom: 1px solid var(--accent-color); }
     .exp-tabs [class^="exp-tab"] [type="radio"]:checked,
     .exp-tabs [class*=" exp-tab"] [type="radio"]:checked {
-      border-bottom: 2px solid #fd264f; }
+      border-bottom: 2px solid var(--border-color-top); }
     .exp-tabs [class^="exp-tab"] [type="radio"]:checked + div,
     .exp-tabs [class*=" exp-tab"] [type="radio"]:checked + div {
       opacity: 1; }
@@ -70,7 +70,7 @@
     display: block;
     width: 0;
     height: 100%;
-    border:1px dashed #fff;
+    border:1px dashed var(--font-color);
     position: absolute;
     top:0;
     left:30px
@@ -80,8 +80,8 @@
     margin: 20px 20px 60px 60px;
     position: relative;
     padding: 10px 10px; 
-    background:rgba(255, 43, 43, 0.388);
-    color:#fff;
+    background:var(--button-alt-hover-color);
+    color:var(--font--alt-2-color);
     border-radius: 14px;
     line-height: 35px;
 }
@@ -92,7 +92,7 @@
     display: block;
     width: 0;
     height: 100%;
-    border:1px solid #fff;
+    border:1px solid var(--font-color);
     position: absolute;
     top:0;
     left:-30px
@@ -104,7 +104,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background:#ff6d6d;
+    background:var(--accent-color);
     border:2px solid #fff;
     position: absolute;
     left:-7.0px
@@ -128,7 +128,7 @@
 .exp-timeline-wrapper .time span{
     position: absolute;
     left: -115px;
-    color:#fff;
+    color: var(--font-color);
     font-size:95%;
     font-weight: bold;
 }

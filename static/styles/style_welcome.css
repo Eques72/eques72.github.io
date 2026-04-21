@@ -16,7 +16,6 @@
     font-size: 24px;
     font-weight: 500;
     margin: 10px 0;
-    color: var(--text-color);
 }
 
 .hero-desc {
@@ -25,7 +24,6 @@
     font-weight: 300;
     max-width: 500px;
     margin: 0 auto 20px;
-    color: var(--text-color);
     text-align: center;
 }
 
@@ -68,7 +66,6 @@
 
 .sf-indicator {
     --sf-indicator-size: 12px;
-    --sf-indicator-green: #0bbf0b;
     align-self: flex-start;
     font-size: 1.2rem;
 }
@@ -134,7 +131,6 @@
 .framed-img {
     --border: 10px;
     --gap: 8px;
-    --color: #FA6900;
 
     width: 55%;
     aspect-ratio: 1;
@@ -144,9 +140,9 @@
 
     --angle: 90deg;
     background:
-    radial-gradient(farthest-side,var(--color) 97%,#0000 101%) 85.35% 85.35%,
-    conic-gradient(from calc(180deg - var(--angle)/2),#0000 var(--angle),var(--color) 0),
-    radial-gradient(farthest-side,var(--color) 97%,#0000 101%) 14.65% 85.35%;
+    radial-gradient(farthest-side,var(--accent-color) 97%,#0000 101%) 85.35% 85.35%,
+    conic-gradient(from calc(180deg - var(--angle)/2),#0000 var(--angle),var(--accent-color) 0),
+    radial-gradient(farthest-side,var(--accent-color) 97%,#0000 101%) 14.65% 85.35%;
     background-size: var(--border) var(--border),auto;
     background-repeat: no-repeat;
 

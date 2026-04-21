@@ -81,7 +81,7 @@
   position: absolute;
   width: 300px;
   height: 450px;
-  background-color: coral;
+  background-color: var(--card-color-top);
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
   transition: all 0.25s linear;
@@ -90,25 +90,28 @@
   z-index: calc((var(--position) - var(--abs)));
 }
 
+.project-card:nth-of-type(odd) {
+  background-color: var(--card-color-top);
+}
+
+.project-card:nth-of-type(even) {
+  background-color: var(--accent-color);
+}
+
 .project-card:nth-of-type(1) {
   --offset: 1;
-  background-color: #90f1ef;
 }
 .project-card:nth-of-type(2) {
   --offset: 2;
-  background-color: #ff70a6;
 }
 .project-card:nth-of-type(3) {
   --offset: 3;
-  background-color: #ff9770;
 }
 .project-card:nth-of-type(4) {
   --offset: 4;
-  background-color: #ffd670;
 }
 .project-card:nth-of-type(5) {
   --offset: 5;
-  background-color: #420346;
 }
 
 .radio-input {
@@ -123,7 +126,7 @@
   appearance: none;
   width: 2em;
   height: 2em;
-  background-color: #171717;
+  background-color: var(--weak-black-color);
   box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   border-radius: 50%;
   transition: .4s ease-in-out;
@@ -133,7 +136,7 @@
   scale: 1.2;
   cursor: pointer;
   box-shadow: none;
-  border: 1px solid #9d0ea7;
+  border: 1px solid var(--button-alt-color);
 }
 
 .radio-input .circle {
@@ -142,7 +145,7 @@
   left: -1.31em;
   width: 0.6em;
   height: 0.6em;
-  background-color: #9d0ea7;
+  background-color: var(--button-alt-color);
   scale: 0;
   border-radius: 10px;
   transition: .4s ease-in-out;
@@ -150,7 +153,7 @@
 
 .radio-input input:checked {
   box-shadow: none;
-  border: 1px solid #9d0ea7;
+  border: 1px solid var(--button-alt-color);
 }
 
 .radio-input input:checked + .circle {
@@ -196,7 +199,7 @@
   top: 10px;
   left: 10px;
   right: 10px;
-  color: white;
+  color: var(--font-color);
   font-weight: bold;
   background: rgba(0,0,0,0.5);
   width: min-content;
@@ -215,8 +218,8 @@
 
 .arrow {
 	--arrow-size: 2rem;
-	--arrow-color: #9d0ea7;
-	--arrow-color-hover: #9d0ea786;
+	--arrow-color: var(--button-alt-color);
+	--arrow-color-hover: var(--button-alt-hover-color);
 	position: relative;
 	display: inline-flex;
 	vertical-align: middle;

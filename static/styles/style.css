@@ -1,25 +1,52 @@
 :root
 {
-    --welcome-bck-color: #ede9e2;
+    /* --welcome-bck-color: #ede9e2;
     --about-bck-color: #EFE9E3;
     --skills-bck-color: #e4dcd5;
     --exp-bck-color: #D9CFC7;
     --proj-bck-color: #d1c2b1;
     --contact-bck-color: #C9B59C;
-    --text-color: white;
+    --text-color: white; */
     /* rgb(10, 10, 10); */
-    --button-color: #D1D8BE;
+    /* --button-color: #D1D8BE;
     --button-hover-color: #A7C1A8;
-    --button-active-color: #819A91;
+    --button-active-color: #819A91; */
 
-    --background-color-top: #081207;
-    --background-color-bottom: #030303;
-    --accent-color: #280f2a;
+    /* --background-color-top: #081207;
+    --background-color-bottom: #030303; */
+    /* --accent-color: #280f2a; */
     /* --background-color-top: #112a0f;
     --background-color-bottom: #0b0e0b; */
     font-size: 16px;
     --spacing: 0.25rem;
     --media-vertical: 800px;
+
+    --background-color-top: #19202b;
+    --background-color-bottom: #222e3d;
+    --background-accent-color: #227A44;
+
+    --card-color-top: #1c3426;
+    --card-color-bottom: #161c19;
+
+    --button-color: #42e883;
+    --button-active-color: var(--background-accent-color);
+    --button-hover-color: #2C9C56;
+
+    --accent-color: #8a3554; /*#E84188 #E86741*/
+    --border-color-top: #E84188; /*#E84188 #E86741*/
+    --border-color-bottom: #E86741; /*#E84188 #E86741*/
+/* rgba(255, 43, 43, 0.388); */
+    --button-alt-color: var(--accent-color);
+    --button-alt-active-color: #37283b;
+    --button-alt-hover-color: #472a3d;
+
+    --font-color: #e5e7e8;
+    --font-alt-color: var(--background-color-top);
+    --font--alt-2-color: #9cb0be;
+
+    --sf-indicator-green: #0bbf0b;
+
+    --weak-black-color: #171717;
 }
 
 html, body {
@@ -31,9 +58,9 @@ html, body {
 body {
     background-color: var(--background-color-top);
     box-sizing: border-box;
-    background-image: radial-gradient(circle,rgba(255, 255, 255, 0.25) 1px,transparent 2px),linear-gradient(to bottom,var(--background-color-top),var(--background-color-bottom));
+    background-image: radial-gradient(circle, color-mix(in srgb, var(--background-accent-color), transparent 33%) 1px,transparent 2px),linear-gradient(to bottom,var(--background-color-top),var(--background-color-bottom));
     background-size: 30px 30px,auto;
-    color: var(--text-color);
+    color: var(--font-color);
     background-attachment: fixed;
     
     position: relative;
@@ -47,7 +74,7 @@ body {
 
 h1 {
     font-family: 'Megrim', sans-serif;
-    color: var(--text-color);
+    color: var(--font-color);
     font-size: 2rem;
     font-weight: bold;
     min-width: 120px;
@@ -56,13 +83,13 @@ h1 {
 h2, h3
 {
     font-family: 'Saira Stencil', sans-serif;
-    color: var(--text-color);
+    color: var(--font-color);
 }
 
 p, span {
     font-family: 'Saira Semi Condensed', sans-serif;
     text-align: justify;
-    color: var(--text-color);
+    color: var(--font--alt-2-color);
 }
 
 button {
@@ -164,56 +191,24 @@ section{
     flex: 1;
 }
 
-/* .btn-primary
-{
-    background-color: #2f7ed8;
-    border: none;
-    border-radius: 3px;
-    padding: 14px;
-    cursor: pointer;
-    transition: background-color 0.4s;
-}
-
-.btn-primary:hover
-{
-    background-color: #2568b8;
-}
-
-.btn-primary p
-{
-    margin: 0;
-    color: #fff;
-    font-size: 1rem;
-    letter-spacing: 0.12em;
-    text-align: center;
-} */
-
 .card {
     min-width: 0;
     display: block;
     box-sizing: border-box;
     width: 100%;
-
-    --grad: red, blue;
     padding: 1.5rem 2rem 1.5rem 2rem;
     /* Top right bottom left */
-    background-image: linear-gradient(60deg, #101010, #001603, #101010);
+    background-image: linear-gradient(60deg, var(--card-color-bottom), var(--card-color-top), var(--card-color-bottom));
     border-radius: 0.5rem;
     gap: 1.5rem;
     box-shadow: 
     inset -3px 3px hsl(0, 0%, 2%),
-    -20px 20px 40px hsla(0, 0%, 100%, 0.25) ;
+    -20px 20px 40px hsla(0, 0%, 76%, 0.25) ;
 
     p {
         grid-area: content;
         & > *:first-child { margin-top: 0rem}
         & > *:last-child { margin-bottom: 0rem}
-    }
-    p::after {
-        content: "";
-        grid-area: bar;
-        height: 2px;
-        background-image: linear-gradient(90deg, var(--grad));
     }
 }
 
@@ -235,7 +230,7 @@ section{
     margin: 30px 0;
     width: 25%;
     height: 2px;
-    background-image: linear-gradient(90deg, #81109d, #4a0aaa);
+    background-image: linear-gradient(90deg, var(--border-color-top), var(--border-color-bottom));
 }
 
 .divider-full
@@ -244,7 +239,7 @@ section{
     margin: 30px 0;
     width: 100%;
     height: 2px;
-    background-image: linear-gradient(90deg, #81109d, #0a0daa);
+    background-image: linear-gradient(90deg, var(--border-color-top), var(--border-color-bottom));
 }
 
 .divider-v
@@ -262,7 +257,7 @@ section{
     margin: 0 0;
     width: 100%;
     height: 2px;
-    background-color: #81109d
+    background-color: var(--border-color-top)
 }
 
 .icon{
@@ -280,26 +275,6 @@ section{
     filter: invert(0.1);
     width: 100%;
     height: 100%;
-}
-
-.item{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-
-    width: 35%;
-    aspect-ratio: 1 / 1;
-    
-    padding: 1rem;
-    background-color: var(--accent-color);
-    transition: 0.4s;
-    border-radius: 50%;
-}
-
-.item:hover
-{
-    background-color: #112a0f;
 }
 
 .about-socials
@@ -337,17 +312,13 @@ section{
 }
 
 .magic-text {
-    --purple: rgb(123, 31, 162);
-    --violet: rgb(103, 58, 183);
-    --pink: rgb(244, 143, 177);
-
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
-        var(--purple),
-        var(--violet),
-        var(--pink),
-        var(--purple)
+        var(--accent-color),
+        #E84188,
+        #E86741,
+        var(--accent-color)
     );
     background-size: 200%;
     -webkit-background-clip: text;
@@ -364,19 +335,19 @@ footer p {
     font-family: Arial, serif;
     font-weight: 400;
     font-size: 1rem;
-    color: #bbbbbb;
+    color: var(--font--alt-2-color);
 }
 
 .btn-primary {
-    background: #350036;
+    background: var(--button-color);
     border-radius: 0.8em;
     box-shadow:
-        inset 0px -6px 18px -6px rgba(3, 15, 20, 0),
-        inset rgba(54, 69, 75, 1) -1px -1px 6px 0px,
-        inset 12px 0px 12px -6px rgba(3, 15, 20, 0),
-        inset -12px 0px 12px -6px rgba(3, 15, 20, 0),
-        rgba(54, 69, 75, 1) -1px -1px 6px 0px;
-    border: solid 2px #030f14;
+        inset 0px -6px 18px -6px rgba(9, 20, 3, 0),
+        inset rgb(65, 75, 54) -1px -1px 6px 0px,
+        inset 12px 0px 12px -6px rgba(7, 20, 3, 0),
+        inset -12px 0px 12px -6px rgba(9, 20, 3, 0),
+        rgb(58, 75, 54) -1px -1px 6px 0px;
+    border: solid 2px var(--background-color-top);
     cursor: pointer;
     font-size: 18px;
     padding: 0.45em 1.7em;
@@ -395,25 +366,27 @@ footer p {
 } 
 
 .btn-primary:hover {
+    background: var(--button-hover-color);
     box-shadow:
-        inset 0px -6px 18px -6px rgba(3, 15, 20, 1),
-        inset 0px 6px 18px -6px rgba(3, 15, 20, 1),
-        inset 12px 0px 12px -6px rgba(3, 15, 20, 0),
-        inset -12px 0px 12px -6px rgba(3, 15, 20, 0),
-        -1px -1px 6px 0px rgba(54, 69, 75, 1);
+        inset 0px -6px 18px -6px rgb(10, 20, 3),
+        inset 0px 6px 18px -6px rgb(11, 20, 3),
+        inset 12px 0px 12px -6px rgba(7, 20, 3, 0),
+        inset -12px 0px 12px -6px rgba(8, 20, 3, 0),
+        -1px -1px 6px 0px rgb(62, 75, 54);
 }
 
 .btn-primary:active {
+    background: var(--button-active-color);
     box-shadow:
-        inset 0px -12px 12px -6px rgba(3, 15, 20, 1),
-        inset 0px 12px 12px -6px rgba(3, 15, 20, 1),
-        inset 12px 0px 12px -6px rgba(3, 15, 20, 1),
-        inset -12px 0px 12px -6px rgba(3, 15, 20, 1),
-        -1px -1px 6px 0px rgba(54, 69, 75, 1);
+        inset 0px -12px 12px -6px rgb(20, 19, 3),
+        inset 0px 12px 12px -6px rgb(20, 18, 3),
+        inset 12px 0px 12px -6px rgb(19, 20, 3),
+        inset -12px 0px 12px -6px rgb(19, 20, 3),
+        -1px -1px 6px 0px rgb(75, 75, 54);
 }
 
 .btn-primary p {
-    color: #d0a756;
+    color: var(--font--alt-2-color);
     font-weight: 700;
     margin: auto;
     transition: all 0.3s;

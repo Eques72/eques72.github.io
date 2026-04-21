@@ -20,7 +20,9 @@
 .skills-col {
     padding: 0px 15px;
     position: relative;
-    border-left: 3px solid color-mix(in srgb, var(--button-active-color) 85%, transparent);
+    border-left: 3px solid;
+    border-image: linear-gradient(to bottom, var(--border-color-top), var(--border-color-bottom)) 1;
+    /* border-left: 3px solid color-mix(in srgb, var(--button-hover-color) 85%, transparent); */
     white-space: nowrap; 
     text-align: left;
 }
