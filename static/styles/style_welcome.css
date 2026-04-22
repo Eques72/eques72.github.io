@@ -2,7 +2,7 @@
     display: block;
     align-items: center;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .hero-name {
@@ -40,6 +40,25 @@
 
 .hero-text{
     margin-bottom: 5vh;
+}
+
+#welcome .grid-2-col {
+    column-gap: calc(var(--spacing)*25)
+}
+
+#welcome .act-pet-grid {
+    gap: 1rem;
+    align-items: stretch;
+    column-gap: calc(var(--spacing)*5)
+}
+
+@media (max-width: 1400px) {
+    .act-pet-grid {
+        row-gap: calc(var(--spacing)*5);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+    }
 }
 
 #welcome .grid-2-col .card {
@@ -155,8 +174,9 @@
     --border: 10px;
     --gap: 8px;
 
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
     flex-shrink: 0;
     aspect-ratio: 1;
     box-sizing: border-box;
@@ -184,6 +204,13 @@
             calc(99%  - var(--border)), 
         #000  calc(100% - var(--border)));
     transition: --angle .4s,--gap .4s;
+}
+
+@media (max-width: 1400px) {
+    .framed-img {
+        width: min(120px, 65%);
+        height: auto;
+    }
 }
 
 .framed-img:hover {
