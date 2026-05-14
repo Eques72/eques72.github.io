@@ -90,6 +90,7 @@ p, span {
     font-family: 'Saira Semi Condensed', sans-serif;
     text-align: justify;
     color: var(--font--alt-2-color);
+    /* font-size: 1.5rem; */
 }
 
 button {
@@ -300,13 +301,19 @@ section{
 .about-socials
 {
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     list-style: none;
     align-items: center;
     justify-content: center;
     padding: 0;
     width: fit-content;
     column-gap: calc(var(--spacing)*5);
+}
+
+@media (max-width: 800px) {
+    .about-socials {
+        grid-auto-flow: column;
+    }
 }
 
 /* .icon

@@ -35,7 +35,9 @@ navLinks.forEach(link =>
         const target = document.getElementById(targetId);
 
         if (target) {
+            console.log("event href: move to ", targetId);
             const offset = target.offsetTop + target.offsetHeight * -0.5;
+            console.log("event href: move to ", targetId, offset);
             window.scrollTo({
             top: offset,
             behavior: 'smooth'

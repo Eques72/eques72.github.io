@@ -2,18 +2,18 @@
     display: block;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 15vh;
 }
 
 .hero-name {
     font-family: 'Bitcount', serif;
-    font-size: 64px;
+    font-size: clamp(4rem, 5vw, 7rem);
     margin: 0;
 }
 
 .hero-title {
     font-family: 'Megrim', sans-serif;
-    font-size: 24px;
+    font-size: clamp(1.5rem, 2vw, 3rem);
     font-weight: 500;
     margin: 10px 0;
 }
@@ -175,6 +175,7 @@
     --gap: 8px;
 
     width: 100%;
+    height: fit-content;
     object-fit: cover;
     display: block;
     flex-shrink: 0;
@@ -226,6 +227,7 @@
     display: flex;
     align-items: center;
     gap: calc(var(--spacing));
+    font-size: clamp(1rem, 1vw, 1.5rem);
 }
 
 .location span{
@@ -238,6 +240,7 @@
 
 .wip-text h3{
     margin: 0;
+    margin-bottom: calc(var(--spacing)*2);
 }
 
 .wip-text p{
