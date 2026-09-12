@@ -158,6 +158,7 @@
 }
 
 .status-green { background-color: var(--sf-indicator-green); }
+.status-yellow { background-color: var(--sf-indicator-yellow); }
 
 @property --gap{
     syntax: '<length>';
